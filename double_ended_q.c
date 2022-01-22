@@ -48,7 +48,6 @@ Queue* enq(Queue *q , int data){
     if(q->first==NULL){
     q->first=q->last=p;
     }else{
-       q->first->next=q->last;
        q->last->next=p;
         q->last=p;
     }
